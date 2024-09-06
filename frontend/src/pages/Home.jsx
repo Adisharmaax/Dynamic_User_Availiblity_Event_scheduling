@@ -12,7 +12,7 @@ function Home() {
   const loginUser = async (email) => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/users/login",
+        "https://dynamic-user-availiblity-event.onrender.com/api/users/login",
         { email }
       );
       setUser(response.data);

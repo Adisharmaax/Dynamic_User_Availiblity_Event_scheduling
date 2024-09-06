@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 .App {
   text-align: center;
 }
@@ -37,11 +38,62 @@
   }
 }
 
+body,
+h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
 /* App.css */
 .background-image {
-  background-image: url('https://img.freepik.com/free-vector/appointment-booking-with-calendar_23-2148555798.jpg?t=st=1725563287~exp=1725566887~hmac=df3d5fe68d1eff3b229b88cb921d2e80e06a8c6cab6148c4aa5799fae0de189a&w=740');
+  background-image: url("https://img.freepik.com/free-vector/appointment-booking-with-calendar_23-2148555798.jpg?t=st=1725563287~exp=1725566887~hmac=df3d5fe68d1eff3b229b88cb921d2e80e06a8c6cab6148c4aa5799fae0de189a&w=740");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+}
+.home-container {
+  background: url("https://images.unsplash.com/photo-1496664444929-8c75efb9546f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+    no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  /* height: 100vh; */
+  max-height: max-content;
+}
+
+.login-box {
+  background-color: rgba(255, 255, 255, 0.9);
+  max-width: 400px;
+  width: 100%;
+}
+
+input.form-control {
+  border-radius: 0;
+  height: 45px;
+}
+
+input::placeholder {
+  font-style: italic;
+  color: #6c757d;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 0;
+}
+
+h1 {
+  font-weight: 700;
+  color: #333;
+}
+
+.input-group-text {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+input:focus {
+  box-shadow: none;
 }
